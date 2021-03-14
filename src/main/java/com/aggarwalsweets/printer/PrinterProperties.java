@@ -17,6 +17,7 @@ public class PrinterProperties {
 	public static final long printInterval;
 	public static final long printInitialDelay;
 	public static final String printerClass;
+	public static final String pdfOutputPath;
 	static {
 		Properties properties = new Properties();
 		ClassLoader classLoader = PrinterProperties.class.getClassLoader();
@@ -32,6 +33,7 @@ public class PrinterProperties {
 		printInterval = Long.parseLong((String) (properties.getOrDefault(PRINT_INTERVAL, "60")));
 		printInitialDelay = Long.parseLong(((String)properties.getOrDefault(PRINT_INITIAL_DELAY, "60")));
 		printerClass = properties.getProperty(PRINTER_CLASS);
+		pdfOutputPath = properties.getProperty(PDF_OUTPUT_PATH);
 	}
 		
 }

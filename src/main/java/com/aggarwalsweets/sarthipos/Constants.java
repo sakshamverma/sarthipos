@@ -24,6 +24,7 @@ public interface Constants {
 	String PRINT_INTERVAL = "printInterval";
 	String PRINT_INITIAL_DELAY = "printInitialDelay";
 	String PRINTER_CLASS = "printerClass";
+	String PDF_OUTPUT_PATH = "pdfOutputPath";
 	
 	String LOG4J_PROPERTIES = "log4j.properties";
 	
